@@ -1,9 +1,11 @@
 # Commission task
 
 To run the program you have to do the following steps:
-- don't forget to change `Paysera` namespace and package name in `composer.json`
- to your own, as `Paysera` keyword should not be used anywhere in your task;
-- `\Paysera\CommissionTask\Service\Math` is an example class provided for the skeleton and could or could not be used by your preference;
-- needed scripts could be found inside `composer.json`;
-- before submitting the task make sure that all the scripts pass (`composer run test` in particular);
-- this file should be updated before submitting the task with the documentation on how to run your program.
+
+- Clone the project from GitHub (git clone https://github.com/ElenaDevBG/payments-commissions-task.git)
+- >cd payments-commissions-task/
+- >composer install
+- You can run the code with:
+  >php index.php ./uploads/file.csv
+- You can run the test with:
+  >./vendor/phpunit/phpunit/phpunit tests/ExchangeRateTest.php
